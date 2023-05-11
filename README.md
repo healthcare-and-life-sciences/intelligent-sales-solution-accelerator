@@ -1,6 +1,6 @@
 ![](/images/ahlsbanner.png)
 
-# A-HLS Internal Sales Solutions Accelerator Documentation
+# A-HLS Intelligent Sales Solutions Accelerator Documentation
 
 ## Overview
 
