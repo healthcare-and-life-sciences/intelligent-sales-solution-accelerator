@@ -1,6 +1,6 @@
 ![](/images/ahlsbanner.png)
 
-# A-HLS MedTech Sales Solutions Accelerator Documentation
+# A-HLS Internal Sales Solutions Accelerator Documentation
 
 ## Overview
 
