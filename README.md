@@ -174,55 +174,55 @@ Add Accelerator Objective
 | <br>Resources:                 |                                                                 |                       |                                      |                                    |
 | ------------------------------ | --------------------------------------------------------------- | --------------------- | ------------------------------------ | ---------------------------------- |
 | <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
-| <br>Create                     | <br>NewEventPRM                                                 | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Account Layout - PRM                                        | <br>Account           | <br>Page Layout                      | <br>This is a brand new component. |
-| <br>Create                     | <br>NewCasePRM                                                  | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>SendEmailPRM                                                | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>NewEventIntSales                                            | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Account Layout - IntSales                                   | <br>Account           | <br>Page Layout                      | <br>This is a brand new component. |
+| <br>Create                     | <br>NewCaseIntSales                                             | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>SendEmailIntSales                                           | <br>Global            | <br>Action                           | <br>This is a brand new component. |
 | <br>Create                     | <br>My Accounts Without Recent Activity                         |                       | <br>Report                           | <br>This is a brand new component. |
 | <br>Create                     | <br>Task.Defer_Change_Date                                      | <br>Task              | <br>Action                           | <br>This is a brand new component. |
 | <br>Create                     | <br>Screen_Shot_20220215_at_45040_PM1                           |                       | <br>Asset File                       | <br>This is a brand new component. |
-| <br>Create                     | <br>Account Request                                             | <br>Case              | <br>Page Layout                      | <br>This is a brand new component. |
-| <br>Create                     | <br>NewNotePRM                                                  | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Physician Liaison Performance Dashboard                     |                       | <br>Dashboard                        | <br>This is a brand new component. |
-| <br>Create                     | <br>Account_Request_Path                                        |                       | <br>Path Assistant                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Provider                                                    | <br>Lead              | <br>Business Process                 | <br>This is a brand new component. |
+| <br>Create                     | <br>IntSales Request                                            | <br>Case              | <br>Page Layout                      | <br>This is a brand new component. |
+| <br>Create                     | <br>NewNoteIntSales                                             | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent Sales Performance Dashboard                     |                       | <br>Dashboard                        | <br>This is a brand new component. |
+| <br>Create                     | <br>IntSales_Path                                               |                       | <br>Path Assistant                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent Sales                                           | <br>Lead              | <br>Business Process                 | <br>This is a brand new component. |
 | <br>Create                     | <br>My Check Ins                                                |                       | <br>Report                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Simple Task                                                 | <br>Task              | <br>Page Layout                      | <br>This is a brand new component. |
+| <br>Create                     | <br>IntSales Task                                               | <br>Task              | <br>Page Layout                      | <br>This is a brand new component. |
 | <br>Create                     | <br>SampleHealthcarePractitionerFacilityContactConfigurationPRM |                       | <br>UI Object Relation Configuration | <br>This is a brand new component. |
-| <br>Create                     | <br>Provider                                                    | <br>Lead              | <br>Record Type                      | <br>This is a brand new component. |
-| <br>Create                     | <br>Provider                                                    | <br>Lead              | <br>Page Layout                      | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent Sales                                           | <br>Lead              | <br>Record Type                      | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent Sales                                           | <br>Lead              | <br>Page Layout                      | <br>This is a brand new component. |
 | <br>Create                     | <br>Confirm Meeting                                             | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Account Request                                             | <br>Case              | <br>Business Process                 | <br>This is a brand new component. |
+| <br>Create                     | <br>IntSales Request                                            | <br>Case              | <br>Business Process                 | <br>This is a brand new component. |
 | <br>Create                     | <br>My Completed Activities                                     |                       | <br>Report                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Liaison Reports                                             |                       | <br>Report Folder                    | <br>This is a brand new component. |
-| <br>Create                     | <br>Physician Liaison Layout                                    | <br>Account           | <br>Compact Layout                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent Sales Reports                                   |                       | <br>Report Folder                    | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent Sales Layout                                    | <br>Account           | <br>Compact Layout                   | <br>This is a brand new component. |
 | <br>Create                     | <br>Case.SendEmailCase                                          | <br>Case              | <br>Action                           | <br>This is a brand new component. |
 | <br>Create                     | <br>Enroll in Provider Portal                                   | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Physician Liaison Layout                                    | <br>Contact           | <br>Compact Layout                   | <br>This is a brand new component. |
-| <br>Create                     | <br>LogACallPRM                                                 | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Simple Task                                                 | <br>Task              | <br>Record Type                      | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent Sales Layout                                    | <br>Contact           | <br>Compact Layout                   | <br>This is a brand new component. |
+| <br>Create                     | <br>LogACallIntSales                                            | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>IntSales Task                                               | <br>Task              | <br>Record Type                      | <br>This is a brand new component. |
 | <br>Create                     | <br>My Avg Check-In Distance from Account (f                    |                       | <br>Report                           | <br>This is a brand new component. |
-| <br>Create                     | <br>NewTaskPRM                                                  | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Physician Layout PRM                                        | <br>Contact           | <br>Page Layout                      | <br>This is a brand new component. |
+| <br>Create                     | <br>NewTaskIntSales                                             | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent Sales                                           | <br>Contact           | <br>Page Layout                      | <br>This is a brand new component. |
 | <br>Create                     | <br>Salesforce Maps Check Out                                   | <br>Task              | <br>Field Set                        | <br>This is a brand new component. |
 | <br>Create                     | <br>Referral Trend Report                                       |                       | <br>Report                           | <br>This is a brand new component. |
-| <br>Create                     | <br>NewOpportunityPRM                                           | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Task.UpdatePriority_PRM                                     | <br>Task              | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>NewOpportunityIntSales                                      | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Task.UpdatePriority_IntSales                                | <br>Task              | <br>Action                           | <br>This is a brand new component. |
 | <br>Create                     | <br>General                                                     | <br>Task              | <br>Record Type                      | <br>This is a brand new component. |
 | <br>Create                     | <br>My New Leads                                                | <br>Lead              | <br>List View                        | <br>This is a brand new component. |
-| <br>Create                     | <br>NewContactPRM                                               | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Account Request                                             | <br>Case              | <br>Record Type                      | <br>This is a brand new component. |
+| <br>Create                     | <br>NewContactIntSales                                          | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>IntSales Request                                            | <br>Case              | <br>Record Type                      | <br>This is a brand new component. |
 | <br>Create                     | <br>My Meeting Quality                                          |                       | <br>Report                           | <br>This is a brand new component. |
 | <br>Create                     | <br>My Time Spent On Site                                       |                       | <br>Report                           | <br>This is a brand new component. |
 | <br>Create                     | <br>SampleHealthcarePractitionerFacilityAccountConfigurationPRM |                       | <br>UI Object Relation Configuration | <br>This is a brand new component. |
-| <br>Create                     | <br>Physician Liaison Layout                                    | <br>Lead              | <br>Compact Layout                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Liaison Dashboards                                          |                       | <br>Dashboard Folder                 | <br>This is a brand new component. |
-| <br>Create                     | <br>New_Task_PRM                                                | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Task.UpdateStatusPRM                                        | <br>Task              | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent Sales Layout                                    | <br>Lead              | <br>Compact Layout                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent Sales Dashboards                                |                       | <br>Dashboard Folder                 | <br>This is a brand new component. |
+| <br>Create                     | <br>New_Task_IntSales                                           | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Task.UpdateStatusIntSales                                   | <br>Task              | <br>Action                           | <br>This is a brand new component. |
 |                                |                                                                 |                       |                                      |                                    |
 | <br>Apps:                      |                                                                 |                       |                                      |                                    |
 | <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
-| <br>Create                     | <br>Physician Relationship Management                           |                       | <br>App                              | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent Sales                                           |                       | <br>App                              | <br>This is a brand new component. |
 |                                |                                                                 |                       |                                      |                                    |
 | <br>Flows:                     |                                                                 |                       |                                      |                                    |
 | <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
@@ -245,12 +245,12 @@ Add Accelerator Objective
 |                                |                                                                 |                       |                                      |                                    |
 | <br>Pages:                     |                                                                 |                       |                                      |                                    |
 | <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
-| <br>Create                     | <br>Physician_Relationship_Management_UtilityBar                |                       | <br>Lightning Page                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Lead_Record_Page_PRM                                        |                       | <br>Lightning Page                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Physician_Liaison_Home_Page                                 |                       | <br>Lightning Page                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Case_Record_Page1                                           |                       | <br>Lightning Page                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Contact_Record_Page_PRM                                     |                       | <br>Lightning Page                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Account_Record_Page_PRM                                     |                       | <br>Lightning Page                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent_Sales_UtilityBar                                |                       | <br>Lightning Page                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Lead_Record_Page_IntSales                                   |                       | <br>Lightning Page                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Intelligent_Sales_Home_Page                                 |                       | <br>Lightning Page                   | <br>This is a brand new component. |
+| <br>Create                     | <br>IntSales_Case_Page                                          |                       | <br>Lightning Page                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Contact_Record_Page_IntSales                                |                       | <br>Lightning Page                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Account_Record_Page_IntSales                                |                       | <br>Lightning Page                   | <br>This is a brand new component. |
 
 ---
 
