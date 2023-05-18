@@ -98,7 +98,7 @@ Add Accelerator Objective
 
 ### Post-Install Configuration Steps:
 
-## These steps must be completed to enable the included components (Estimated Time: 1-2 hours)
+#### These steps must be completed to enable the included components (Estimated Time: 1-2 hours)
 
 **Enable Path to support the visual Path flow on the Case Lightning Record Page**
 
@@ -165,108 +165,108 @@ Add Accelerator Objective
 3. Name the Profile “Physician Liaison”
 4. Ensure to align the Profile to these components:
 
-| **Component Type**                   | **Component Name**               |
-| ------------------------------------ | -------------------------------- |
-| <br>Lightning App                    | <br>Intelligent Sales            |
-| <br>Default Home Page - IntSales App | <br>Intelligent_Sales_Home_Page  |
-| <br>Case Record Type                 | <br>IntSales Request             |
-| <br>Case Page Layout                 | <br>IntSales Request             |
-| <br>Case Path                        | <br>IntSales Path                |
-| <br>Case Lightning Page              | <br>IntSales_Case_Page           |
-| <br>Task Record Type                 | <br>IntSales Task                |
-| <br>Contact Page Layout              | <br>Intelligent Sales            |
-| <br>Contact Lightning Page           | <br>Contact_Record_Page_IntSales |
-| <br>Contact Compact Layout           | <br>Intelligent Sales Layout     |
-| <br>Lead Record Type                 | <br>Intelligent Sales            |
-| <br>Lead Page Layout                 | <br>Intelligent Sales            |
-| <br>Lead Lightning Page              | <br>Lead_Record_Page_IntSales    |
-| <br>Lead Compact Layout              | <br>Intelligent Sales Layout     |
-| <br>Account Page Layout              | <br>Account Layout - IntSales    |
-| <br>Account Lightning Page           | <br>Account_Record_Page_IntSales |
-| <br>Account Compact Layout           | <br>Intelligent Sales Layout     |
+| **Component Type**               | **Component Name**           |
+| -------------------------------- | ---------------------------- |
+| Lightning App                    | Intelligent Sales            |
+| Default Home Page - IntSales App | Intelligent_Sales_Home_Page  |
+| Case Record Type                 | IntSales Request             |
+| Case Page Layout                 | IntSales Request             |
+| Case Path                        | IntSales Path                |
+| Case Lightning Page              | IntSales_Case_Page           |
+| Task Record Type                 | IntSales Task                |
+| Contact Page Layout              | Intelligent Sales            |
+| Contact Lightning Page           | Contact_Record_Page_IntSales |
+| Contact Compact Layout           | Intelligent Sales Layout     |
+| Lead Record Type                 | Intelligent Sales            |
+| Lead Page Layout                 | Intelligent Sales            |
+| Lead Lightning Page              | Lead_Record_Page_IntSales    |
+| Lead Compact Layout              | Intelligent Sales Layout     |
+| Account Page Layout              | Account Layout - IntSales    |
+| Account Lightning Page           | Account_Record_Page_IntSales |
+| Account Compact Layout           | Intelligent Sales Layout     |
 
 ## Unmanaged Package Component Inventory
 
-| <br>Resources:                 |                                                                 |                       |                                      |                                    |
-| ------------------------------ | --------------------------------------------------------------- | --------------------- | ------------------------------------ | ---------------------------------- |
-| <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
-| <br>Create                     | <br>NewEventIntSales                                            | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Account Layout - IntSales                                   | <br>Account           | <br>Page Layout                      | <br>This is a brand new component. |
-| <br>Create                     | <br>NewCaseIntSales                                             | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>SendEmailIntSales                                           | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>My Accounts Without Recent Activity                         |                       | <br>Report                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Task.Defer_Change_Date                                      | <br>Task              | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Screen_Shot_20220215_at_45040_PM1                           |                       | <br>Asset File                       | <br>This is a brand new component. |
-| <br>Create                     | <br>IntSales Request                                            | <br>Case              | <br>Page Layout                      | <br>This is a brand new component. |
-| <br>Create                     | <br>NewNoteIntSales                                             | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Intelligent Sales Performance Dashboard                     |                       | <br>Dashboard                        | <br>This is a brand new component. |
-| <br>Create                     | <br>IntSales_Path                                               |                       | <br>Path Assistant                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Intelligent Sales                                           | <br>Lead              | <br>Business Process                 | <br>This is a brand new component. |
-| <br>Create                     | <br>My Check Ins                                                |                       | <br>Report                           | <br>This is a brand new component. |
-| <br>Create                     | <br>IntSales Task                                               | <br>Task              | <br>Page Layout                      | <br>This is a brand new component. |
-| <br>Create                     | <br>SampleHealthcarePractitionerFacilityContactConfigurationPRM |                       | <br>UI Object Relation Configuration | <br>This is a brand new component. |
-| <br>Create                     | <br>Intelligent Sales                                           | <br>Lead              | <br>Record Type                      | <br>This is a brand new component. |
-| <br>Create                     | <br>Intelligent Sales                                           | <br>Lead              | <br>Page Layout                      | <br>This is a brand new component. |
-| <br>Create                     | <br>Confirm Meeting                                             | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>IntSales Request                                            | <br>Case              | <br>Business Process                 | <br>This is a brand new component. |
-| <br>Create                     | <br>My Completed Activities                                     |                       | <br>Report                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Intelligent Sales Reports                                   |                       | <br>Report Folder                    | <br>This is a brand new component. |
-| <br>Create                     | <br>Intelligent Sales Layout                                    | <br>Account           | <br>Compact Layout                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Case.SendEmailCase                                          | <br>Case              | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Enroll in Provider Portal                                   | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Intelligent Sales Layout                                    | <br>Contact           | <br>Compact Layout                   | <br>This is a brand new component. |
-| <br>Create                     | <br>LogACallIntSales                                            | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>IntSales Task                                               | <br>Task              | <br>Record Type                      | <br>This is a brand new component. |
-| <br>Create                     | <br>My Avg Check-In Distance from Account (f                    |                       | <br>Report                           | <br>This is a brand new component. |
-| <br>Create                     | <br>NewTaskIntSales                                             | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Intelligent Sales                                           | <br>Contact           | <br>Page Layout                      | <br>This is a brand new component. |
-| <br>Create                     | <br>Salesforce Maps Check Out                                   | <br>Task              | <br>Field Set                        | <br>This is a brand new component. |
-| <br>Create                     | <br>Referral Trend Report                                       |                       | <br>Report                           | <br>This is a brand new component. |
-| <br>Create                     | <br>NewOpportunityIntSales                                      | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Task.UpdatePriority_IntSales                                | <br>Task              | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>General                                                     | <br>Task              | <br>Record Type                      | <br>This is a brand new component. |
-| <br>Create                     | <br>My New Leads                                                | <br>Lead              | <br>List View                        | <br>This is a brand new component. |
-| <br>Create                     | <br>NewContactIntSales                                          | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>IntSales Request                                            | <br>Case              | <br>Record Type                      | <br>This is a brand new component. |
-| <br>Create                     | <br>My Meeting Quality                                          |                       | <br>Report                           | <br>This is a brand new component. |
-| <br>Create                     | <br>My Time Spent On Site                                       |                       | <br>Report                           | <br>This is a brand new component. |
-| <br>Create                     | <br>SampleHealthcarePractitionerFacilityAccountConfigurationPRM |                       | <br>UI Object Relation Configuration | <br>This is a brand new component. |
-| <br>Create                     | <br>Intelligent Sales Layout                                    | <br>Lead              | <br>Compact Layout                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Intelligent Sales Dashboards                                |                       | <br>Dashboard Folder                 | <br>This is a brand new component. |
-| <br>Create                     | <br>New_Task_IntSales                                           | <br>Global            | <br>Action                           | <br>This is a brand new component. |
-| <br>Create                     | <br>Task.UpdateStatusIntSales                                   | <br>Task              | <br>Action                           | <br>This is a brand new component. |
-|                                |                                                                 |                       |                                      |                                    |
-| <br>Apps:                      |                                                                 |                       |                                      |                                    |
-| <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
-| <br>Create                     | <br>Intelligent Sales                                           |                       | <br>App                              | <br>This is a brand new component. |
-|                                |                                                                 |                       |                                      |                                    |
-| <br>Flows:                     |                                                                 |                       |                                      |                                    |
-| <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
-| <br>Create                     | <br>Reminder to Enroll in Provider Portal                       |                       | <br>Flow Version                     | <br>This is a brand new component. |
-|                                |                                                                 |                       |                                      |                                    |
-| <br>Fields:                    |                                                                 |                       |                                      |                                    |
-| <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
-| <br>Create                     | <br>Check Out Distance From Record (mi)                         | <br>Activity          | <br>Custom Field                     | <br>This is a brand new component. |
-| <br>Create                     | <br>Check Out Date/Time                                         | <br>Activity          | <br>Custom Field                     | <br>This is a brand new component. |
-| <br>Create                     | <br>Meeting Quality                                             | <br>Activity          | <br>Custom Field                     | <br>This is a brand new component. |
-| <br>Create                     | <br>Check In Date/Time                                          | <br>Activity          | <br>Custom Field                     | <br>This is a brand new component. |
-| <br>Create                     | <br>Enrolled in Provider Portal?                                | <br>Contact           | <br>Custom Field                     | <br>This is a brand new component. |
-| <br>Create                     | <br>Time on Site Minutes                                        | <br>Activity          | <br>Custom Field                     | <br>This is a brand new component. |
-| <br>Create                     | <br>Days Since Last Visit                                       | <br>Account           | <br>Custom Field                     | <br>This is a brand new component. |
-| <br>Create                     | <br>Check Out Date                                              | <br>Activity          | <br>Custom Field                     | <br>This is a brand new component. |
-|                                |                                                                 |                       |                                      |                                    |
-| <br>Recommendation Strategies: |                                                                 |                       |                                      |                                    |
-| <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
-| <br>Create                     | <br>Referring Providers                                         |                       | <br>Recommendation Strategy          | <br>This is a brand new component. |
-|                                |                                                                 |                       |                                      |                                    |
-| <br>Pages:                     |                                                                 |                       |                                      |                                    |
-| <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
-| <br>Create                     | <br>Intelligent_Sales_UtilityBar                                |                       | <br>Lightning Page                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Lead_Record_Page_IntSales                                   |                       | <br>Lightning Page                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Intelligent_Sales_Home_Page                                 |                       | <br>Lightning Page                   | <br>This is a brand new component. |
-| <br>Create                     | <br>IntSales_Case_Page                                          |                       | <br>Lightning Page                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Contact_Record_Page_IntSales                                |                       | <br>Lightning Page                   | <br>This is a brand new component. |
-| <br>Create                     | <br>Account_Record_Page_IntSales                                |                       | <br>Lightning Page                   | <br>This is a brand new component. |
+| Resources:                 |                                                             |                   |                                  |                                |
+| -------------------------- | ----------------------------------------------------------- | ----------------- | -------------------------------- | ------------------------------ |
+| **Action**                 | **Component Name**                                          | **Parent Object** | **Component Type**               | **Installation Notes**         |
+| Create                     | NewEventIntSales                                            | Global            | Action                           | This is a brand new component. |
+| Create                     | Account Layout - IntSales                                   | Account           | Page Layout                      | This is a brand new component. |
+| Create                     | NewCaseIntSales                                             | Global            | Action                           | This is a brand new component. |
+| Create                     | SendEmailIntSales                                           | Global            | Action                           | This is a brand new component. |
+| Create                     | My Accounts Without Recent Activity                         |                   | Report                           | This is a brand new component. |
+| Create                     | Task.Defer_Change_Date                                      | Task              | Action                           | This is a brand new component. |
+| Create                     | Screen_Shot_20220215_at_45040_PM1                           |                   | Asset File                       | This is a brand new component. |
+| Create                     | IntSales Request                                            | Case              | Page Layout                      | This is a brand new component. |
+| Create                     | NewNoteIntSales                                             | Global            | Action                           | This is a brand new component. |
+| Create                     | Intelligent Sales Performance Dashboard                     |                   | Dashboard                        | This is a brand new component. |
+| Create                     | IntSales_Path                                               |                   | Path Assistant                   | This is a brand new component. |
+| Create                     | Intelligent Sales                                           | Lead              | Business Process                 | This is a brand new component. |
+| Create                     | My Check Ins                                                |                   | Report                           | This is a brand new component. |
+| Create                     | IntSales Task                                               | Task              | Page Layout                      | This is a brand new component. |
+| Create                     | SampleHealthcarePractitionerFacilityContactConfigurationPRM |                   | UI Object Relation Configuration | This is a brand new component. |
+| Create                     | Intelligent Sales                                           | Lead              | Record Type                      | This is a brand new component. |
+| Create                     | Intelligent Sales                                           | Lead              | Page Layout                      | This is a brand new component. |
+| Create                     | Confirm Meeting                                             | Global            | Action                           | This is a brand new component. |
+| Create                     | IntSales Request                                            | Case              | Business Process                 | This is a brand new component. |
+| Create                     | My Completed Activities                                     |                   | Report                           | This is a brand new component. |
+| Create                     | Intelligent Sales Reports                                   |                   | Report Folder                    | This is a brand new component. |
+| Create                     | Intelligent Sales Layout                                    | Account           | Compact Layout                   | This is a brand new component. |
+| Create                     | Case.SendEmailCase                                          | Case              | Action                           | This is a brand new component. |
+| Create                     | Enroll in Provider Portal                                   | Global            | Action                           | This is a brand new component. |
+| Create                     | Intelligent Sales Layout                                    | Contact           | Compact Layout                   | This is a brand new component. |
+| Create                     | LogACallIntSales                                            | Global            | Action                           | This is a brand new component. |
+| Create                     | IntSales Task                                               | Task              | Record Type                      | This is a brand new component. |
+| Create                     | My Avg Check-In Distance from Account (f                    |                   | Report                           | This is a brand new component. |
+| Create                     | NewTaskIntSales                                             | Global            | Action                           | This is a brand new component. |
+| Create                     | Intelligent Sales                                           | Contact           | Page Layout                      | This is a brand new component. |
+| Create                     | Salesforce Maps Check Out                                   | Task              | Field Set                        | This is a brand new component. |
+| Create                     | Referral Trend Report                                       |                   | Report                           | This is a brand new component. |
+| Create                     | NewOpportunityIntSales                                      | Global            | Action                           | This is a brand new component. |
+| Create                     | Task.UpdatePriority_IntSales                                | Task              | Action                           | This is a brand new component. |
+| Create                     | General                                                     | Task              | Record Type                      | This is a brand new component. |
+| Create                     | My New Leads                                                | Lead              | List View                        | This is a brand new component. |
+| Create                     | NewContactIntSales                                          | Global            | Action                           | This is a brand new component. |
+| Create                     | IntSales Request                                            | Case              | Record Type                      | This is a brand new component. |
+| Create                     | My Meeting Quality                                          |                   | Report                           | This is a brand new component. |
+| Create                     | My Time Spent On Site                                       |                   | Report                           | This is a brand new component. |
+| Create                     | SampleHealthcarePractitionerFacilityAccountConfigurationPRM |                   | UI Object Relation Configuration | This is a brand new component. |
+| Create                     | Intelligent Sales Layout                                    | Lead              | Compact Layout                   | This is a brand new component. |
+| Create                     | Intelligent Sales Dashboards                                |                   | Dashboard Folder                 | This is a brand new component. |
+| Create                     | New_Task_IntSales                                           | Global            | Action                           | This is a brand new component. |
+| Create                     | Task.UpdateStatusIntSales                                   | Task              | Action                           | This is a brand new component. |
+|                            |                                                             |                   |                                  |                                |
+| Apps:                      |                                                             |                   |                                  |                                |
+| **Action**                 | **Component Name**                                          | **Parent Object** | **Component Type**               | **Installation Notes**         |
+| Create                     | Intelligent Sales                                           |                   | App                              | This is a brand new component. |
+|                            |                                                             |                   |                                  |                                |
+| Flows:                     |                                                             |                   |                                  |                                |
+| **Action**                 | **Component Name**                                          | **Parent Object** | **Component Type**               | **Installation Notes**         |
+| Create                     | Reminder to Enroll in Provider Portal                       |                   | Flow Version                     | This is a brand new component. |
+|                            |                                                             |                   |                                  |                                |
+| Fields:                    |                                                             |                   |                                  |                                |
+| **Action**                 | **Component Name**                                          | **Parent Object** | **Component Type**               | **Installation Notes**         |
+| Create                     | Check Out Distance From Record (mi)                         | Activity          | Custom Field                     | This is a brand new component. |
+| Create                     | Check Out Date/Time                                         | Activity          | Custom Field                     | This is a brand new component. |
+| Create                     | Meeting Quality                                             | Activity          | Custom Field                     | This is a brand new component. |
+| Create                     | Check In Date/Time                                          | Activity          | Custom Field                     | This is a brand new component. |
+| Create                     | Enrolled in Provider Portal?                                | Contact           | Custom Field                     | This is a brand new component. |
+| Create                     | Time on Site Minutes                                        | Activity          | Custom Field                     | This is a brand new component. |
+| Create                     | Days Since Last Visit                                       | Account           | Custom Field                     | This is a brand new component. |
+| Create                     | Check Out Date                                              | Activity          | Custom Field                     | This is a brand new component. |
+|                            |                                                             |                   |                                  |                                |
+| Recommendation Strategies: |                                                             |                   |                                  |                                |
+| **Action**                 | **Component Name**                                          | **Parent Object** | **Component Type**               | **Installation Notes**         |
+| Create                     | Referring Providers                                         |                   | Recommendation Strategy          | This is a brand new component. |
+|                            |                                                             |                   |                                  |                                |
+| Pages:                     |                                                             |                   |                                  |                                |
+| **Action**                 | **Component Name**                                          | **Parent Object** | **Component Type**               | **Installation Notes**         |
+| Create                     | Intelligent_Sales_UtilityBar                                |                   | Lightning Page                   | This is a brand new component. |
+| Create                     | Lead_Record_Page_IntSales                                   |                   | Lightning Page                   | This is a brand new component. |
+| Create                     | Intelligent_Sales_Home_Page                                 |                   | Lightning Page                   | This is a brand new component. |
+| Create                     | IntSales_Case_Page                                          |                   | Lightning Page                   | This is a brand new component. |
+| Create                     | Contact_Record_Page_IntSales                                |                   | Lightning Page                   | This is a brand new component. |
+| Create                     | Account_Record_Page_IntSales                                |                   | Lightning Page                   | This is a brand new component. |
 
 ---
 
