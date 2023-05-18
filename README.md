@@ -165,7 +165,7 @@ Add Accelerator Objective
 3. Name the Profile “Physician Liaison”
 4. Ensure to align the Profile to these components:
 
-| <br>**Component Type**               | <br>**Comopnent Name**           |
+| **Component Type**                   | **Component Name**               |
 | ------------------------------------ | -------------------------------- |
 | <br>Lightning App                    | <br>Intelligent Sales            |
 | <br>Default Home Page - IntSales App | <br>Intelligent_Sales_Home_Page  |
