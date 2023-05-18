@@ -26,13 +26,11 @@ Add Accelerator Objective
 
 ### Primary Industry:
 
--    Add
--    Add
+-    Provider
 
 ### Primary User Persona:
 
--    Add
--    Add
+-    Physician Liaison
 
 ### User Workflow:
 
@@ -167,7 +165,25 @@ Add Accelerator Objective
 3. Name the Profile “Physician Liaison”
 4. Ensure to align the Profile to these components:
 
-![](/images/prm4.png)
+| <br>**Component Type**               | <br>**Comopnent Name**           |
+| ------------------------------------ | -------------------------------- |
+| <br>Lightning App                    | <br>Intelligent Sales            |
+| <br>Default Home Page - IntSales App | <br>Intelligent_Sales_Home_Page  |
+| <br>Case Record Type                 | <br>IntSales Request             |
+| <br>Case Page Layout                 | <br>IntSales Request             |
+| <br>Case Path                        | <br>IntSales Path                |
+| <br>Case Lightning Page              | <br>IntSales_Case_Page           |
+| <br>Task Record Type                 | <br>IntSales Task                |
+| <br>Contact Page Layout              | <br>Intelligent Sales            |
+| <br>Contact Lightning Page           | <br>Contact_Record_Page_IntSales |
+| <br>Contact Compact Layout           | <br>Intelligent Sales Layout     |
+| <br>Lead Record Type                 | <br>Intelligent Sales            |
+| <br>Lead Page Layout                 | <br>Intelligent Sales            |
+| <br>Lead Lightning Page              | <br>Lead_Record_Page_IntSales    |
+| <br>Lead Compact Layout              | <br>Intelligent Sales Layout     |
+| <br>Account Page Layout              | <br>Account Layout - IntSales    |
+| <br>Account Lightning Page           | <br>Account_Record_Page_IntSales |
+| <br>Account Compact Layout           | <br>Intelligent Sales Layout     |
 
 ## Unmanaged Package Component Inventory
 
@@ -256,10 +272,9 @@ Add Accelerator Objective
 
 ## Assumptions
 
-1. A customer has licenses for Health Cloud, and the HINS Managed Package with OmniStudio. These solutions have all been installed and are functional.
+1. A customer has licenses for Industry Cloud and Salesforce Maps. These solutions have all been installed and are functional.
 2. A customer is assuming Salesforce Lightning Experience — not Classic.
-3. Data Model elements that are part of the HINS (Vlocity) Managed package and Health Cloud are all available.
-4. The Accelerator uses the Lightning Design System standards and look. Customers may want to apply their own branding which can be achieved.
+3. The Accelerator uses the Lightning Design System standards and look. Customers may want to apply their own branding which can be achieved.
 
 ---
 
