@@ -117,9 +117,9 @@ Add Accelerator Objective
 
 1. Download the recommendation_1.csv file in the GitHub repository here: https://github.com/salesforce/Accelerator-for-Provider-Relationship-Management
 2. Use DataLoader to import the Recommendation into your Salesforce org. When importing, you may leave the following fields unmapped:
-   a. ID
-   b. ISACTIONACTIVE
-   c. ISDELETED
+     1. ID
+     2. ISACTIONACTIVE
+     3. ISDELETED
 
 **Meeting Reminder Flow and Email Template**
 
