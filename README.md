@@ -129,9 +129,9 @@ Add Accelerator Objective
      1. Object: Event
      2. Trigger the Flow When: A record is created or updated
      3. Entry Conditions:
-     4. Condition Requirements: Formula Evaluates to True
-     5. Formula: {!$Record.ActivityDate} > TODAY()
-     6. When to Run the Flow for Updated Records: Only when a record is updated to meet the condition requirements.
+          1. Condition Requirements: Formula Evaluates to True
+          2. Formula: `{!$Record.ActivityDate} > TODAY()`
+          3. When to Run the Flow for Updated Records: Only when a record is updated to meet the condition requirements.
 
 ![](/images/prm2.png)
 
