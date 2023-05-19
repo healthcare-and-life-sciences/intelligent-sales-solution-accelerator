@@ -106,10 +106,16 @@ Add Accelerator Objective
 
 **Configure Salesforce Maps**
 
-1. Please follow these steps to set up Salesforce Maps: [_https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_maps.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_maps.htm&type=5)
-2. The package contains predefined custom fields for the Check-In Activity Fields. Please follow the steps in this Help Article: [_https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_check_in_activity_fields_select.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_check_in_activity_fields_select.htm&type=5)
-3. At the bottom of the Activity Settings, click “Suggest” to auto-assign the custom fields.
-4. In the Field Set dropdown in Activity Settings, Select the Field Set “Salesforce Maps Check Out”.
+1. Create a Field Set named "Salesforce Maps Check Out" on the "Task" object. For help on how to create a Field Set, go to [https://help.salesforce.com/s/articleView?id=sf.fields_editing_field_sets.htm&type=5](https://help.salesforce.com/s/articleView?id=sf.fields_editing_field_sets.htm&type=5).
+     1. Field Set Label: Salesforce Maps Check Out
+     2. Field Set Name: Salesforce_Maps_Check_Out
+     3. Where is this used?: Salesforce Maps
+     4. Click Save.
+     5. Add the following fields to the Field Set: Call Result, Comments, Check Out Date.
+2. Please follow these steps to set up Salesforce Maps: [_https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_maps.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_maps.htm&type=5)
+3. The package contains predefined custom fields for the Check-In Activity Fields. Please follow the steps in this Help Article: [_https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_check_in_activity_fields_select.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_check_in_activity_fields_select.htm&type=5)
+4. At the bottom of the Activity Settings, click “Suggest” to auto-assign the custom fields.
+5. In the Field Set dropdown in Activity Settings, Select the Field Set “Salesforce Maps Check Out”.
 
 ![](/images/prm1.png)
 
