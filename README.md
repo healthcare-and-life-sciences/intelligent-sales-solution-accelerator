@@ -121,8 +121,8 @@ Add Accelerator Objective
 
 **Configure Recommendation Record -** This Recommendation will show as a Next Best Action to your liaisons as they review contact records in Salesforce. If the custom field “Enrolled in Provider Portal?” on the Contact Record is Unchecked, then this recommendation will show.
 
-1. Download the recommendation_1.csv file in the GitHub repository here: https://github.com/salesforce/Accelerator-for-Provider-Relationship-Management
-2. Use DataLoader to import the Recommendation into your Salesforce org. When importing, you may leave the following fields unmapped:
+1. Download the recommendation_1.csv file in the GitHub repository here: https://github.com/healthcare-and-life-sciences/intelligent-sales-solution-accelerator
+2. Use DataLoader to import the CSV file into the Recommendation object in your Salesforce org. When importing, you may leave the following fields unmapped:
      1. ID
      2. ISACTIONACTIVE
      3. ISDELETED
@@ -138,10 +138,11 @@ Add Accelerator Objective
           1. Condition Requirements: Formula Evaluates to True
           2. Formula: `{!$Record.ActivityDate} > TODAY()`
           3. When to Run the Flow for Updated Records: Only when a record is updated to meet the condition requirements.
+          4. Click Done.
 
 ![](/images/prm2.png)
 
-1. On the Flow path, Click to add a Schedule Trigger:
+1. Click on Start on the Flow path, then click "Add Scheduled Paths (Optional)":
      1. Set the Schedule Path to be “1 Day Before Event: Date”
      2. Time Source: Event: Due Date Only
      3. Offset Number: 1
@@ -150,11 +151,13 @@ Add Accelerator Objective
 ![](/images/prm3.png)
 
 1. Add a Flow Action of the following type: Email Alert
-     1. Type = Email Alert
-     2. Description = Meeting Reminder
-     3. Email Template = the Email template record of your choosing. For additional information on how to create an email template, refer to this Help Article: [_https://help.salesforce.com/s/articleView?id=sf.email_create_a_template.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.email_create_a_template.htm&type=5)
-     4. Selected Recipients = Attendees
-     5. From Email Address = Select the appropriate from email address according to your organization’s preferences.
+     1. NOTE: If you don’t already have an email template created to use, create the template first. For additional information on how to create an email template, refer to this Help Article: https://help.salesforce.com/s/articleView?id=sf.email_create_a_template.htm&type=5
+          1. Once you have created an email template, you will need to create an Email Alert. For more information on creating email alerts, go to https://help.salesforce.com/s/articleView?id=sf.customize_wfalerts.htm&type=5.
+          2. When creating the Email Alert, attach it to the Event object.
+     2. Type = Email Alert
+     3. Email Template = the Email template record of your choosing.
+     4. Label = Meeting Reminder
+     5. RecordID = `{!$Record.ActivityDate}`
 2. Save and Debug your Flow to validate that it meets your business requirements
 3. Once you are satisfied with the Flow, Activate the Flow.
 
@@ -219,7 +222,6 @@ Add Accelerator Objective
 | Create                     | Intelligent Sales Reports                                   |                   | Report Folder                    | This is a brand new component. |
 | Create                     | Intelligent Sales Layout                                    | Account           | Compact Layout                   | This is a brand new component. |
 | Create                     | Case.SendEmailCase                                          | Case              | Action                           | This is a brand new component. |
-| Create                     | Enroll in Provider Portal                                   | Global            | Action                           | This is a brand new component. |
 | Create                     | Intelligent Sales Layout                                    | Contact           | Compact Layout                   | This is a brand new component. |
 | Create                     | LogACallIntSales                                            | Global            | Action                           | This is a brand new component. |
 | Create                     | IntSales Task                                               | Task              | Record Type                      | This is a brand new component. |
@@ -228,7 +230,6 @@ Add Accelerator Objective
 | Create                     | Intelligent Sales                                           | Contact           | Page Layout                      | This is a brand new component. |
 | Create                     | Salesforce Maps Check Out                                   | Task              | Field Set                        | This is a brand new component. |
 | Create                     | Referral Trend Report                                       |                   | Report                           | This is a brand new component. |
-| Create                     | NewOpportunityIntSales                                      | Global            | Action                           | This is a brand new component. |
 | Create                     | Task.UpdatePriority_IntSales                                | Task              | Action                           | This is a brand new component. |
 | Create                     | General                                                     | Task              | Record Type                      | This is a brand new component. |
 | Create                     | My New Leads                                                | Lead              | List View                        | This is a brand new component. |
