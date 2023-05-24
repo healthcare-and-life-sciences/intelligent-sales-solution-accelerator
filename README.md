@@ -224,8 +224,8 @@ Add Accelerator Objective
 | Create                     | Case.SendEmailCase                                          | Case              | Action                           | This is a brand new component. |
 | Create                     | Intelligent Sales Layout                                    | Contact           | Compact Layout                   | This is a brand new component. |
 | Create                     | LogACallIntSales                                            | Global            | Action                           | This is a brand new component. |
-| Create                     | IntSales Task                                               | Task              | Record Type                      | This is a brand new component. |
-| Create                     | My Avg Check-In Distance from Account (f                    |                   | Report                           | This is a brand new component. |
+| Create                     | Intelligent Sales                                           | Task              | Record Type                      | This is a brand new component. |
+| Create                     | My Avg Check-In Distance from Account                       |                   | Report                           | This is a brand new component. |
 | Create                     | NewTaskIntSales                                             | Global            | Action                           | This is a brand new component. |
 | Create                     | Intelligent Sales                                           | Contact           | Page Layout                      | This is a brand new component. |
 | Create                     | Salesforce Maps Check Out                                   | Task              | Field Set                        | This is a brand new component. |
