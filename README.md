@@ -130,36 +130,9 @@ Add Accelerator Objective
 **Meeting Reminder Flow and Email Template**
 
 1. This will enable the system to automatically send prospects or contacts an email reminder of an upcoming meeting 1 day before the meeting date. This helps decrease the no-show rate of prospects or contacts of liaison meetings.
-2. Create a new Record-Triggered Flow titled “Meeting Reminder”
-3. Configure the Flow Start as outlined below:
-     1. Object: Event
-     2. Trigger the Flow When: A record is created or updated
-     3. Entry Conditions:
-          1. Condition Requirements: Formula Evaluates to True
-          2. Formula: `{!$Record.ActivityDate} > TODAY()`
-          3. When to Run the Flow for Updated Records: Only when a record is updated to meet the condition requirements.
-          4. Click Done.
-
-![](/images/prm2.png)
-
-1. Click on Start on the Flow path, then click "Add Scheduled Paths (Optional)":
-     1. Set the Schedule Path to be “1 Day Before Event: Date”
-     2. Time Source: Event: Due Date Only
-     3. Offset Number: 1
-     4. Offset Options: Day Before
-
-![](/images/prm3.png)
-
-1. Add a Flow Action of the following type: Email Alert
-     1. NOTE: If you don’t already have an email template created to use, create the template first. For additional information on how to create an email template, refer to this Help Article: https://help.salesforce.com/s/articleView?id=sf.email_create_a_template.htm&type=5
-          1. Once you have created an email template, you will need to create an Email Alert. For more information on creating email alerts, go to https://help.salesforce.com/s/articleView?id=sf.customize_wfalerts.htm&type=5.
-          2. When creating the Email Alert, attach it to the Event object.
-     2. Type = Email Alert
-     3. Email Template = the Email template record of your choosing.
-     4. Label = Meeting Reminder
-     5. RecordID = `{!$Record.ActivityDate}`
-2. Save and Debug your Flow to validate that it meets your business requirements
-3. Once you are satisfied with the Flow, Activate the Flow.
+2. In Setup, go to Flows and find "Intelligent Sales Meeting Reminder" to make sure it is activated.
+3. A sample email template has been included for the meeting reminder Flow. You can use this template or create your own. For additional information on how to create an email template, refer to this Help Article: https://help.salesforce.com/s/articleView?id=sf.email_create_a_template.htm&type=5
+     1. If you create your own email template, you will need to update the Meeting Reminder Email Alert. For more information on creating and updating email alerts, go to https://help.salesforce.com/s/articleView?id=sf.customize_wfalerts.htm&type=5.
 
 **Add “Confirm Meeting” Quick Action to your users’ Publisher Layout**
 
@@ -167,32 +140,32 @@ Add Accelerator Objective
 2. To enable this Quick Action, add the Quick Action to the active Publisher Layout assigned to the Physician Liaison Profile, or your Global Publisher Layout.
 3. Refer to this Help Article for more information on how to edit a Publisher Layout: [_https://help.salesforce.com/s/articleView?id=sf.working_with_global_publisher_layouts.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.working_with_global_publisher_layouts.htm&type=5)
 
-**Create a Physician Liaison Profile**
+**Create a Profile**
 
 1. Navigate to Setup > Profiles > New Profile
 2. Ensure the Profile is aligned to the Salesforce License Type
-3. Name the Profile “Physician Liaison”
+3. Give the profile a descriptive name that describes the role
 4. Ensure to align the Profile to these components:
 
-| **Component Type**               | **Component Name**           |
-| -------------------------------- | ---------------------------- |
-| Lightning App                    | Intelligent Sales            |
+| **Component Type**               | **Component Name**           | **Location in Setup**                             |
+| -------------------------------- | ---------------------------- | ------------------------------------------------- |
+| Lightning App                    | Intelligent Sales            | Lightning App Builder                             |
 | Default Home Page - IntSales App | Intelligent_Sales_Home_Page  |
-| Case Record Type                 | IntSales Request             |
-| Case Page Layout                 | IntSales Request             |
+| Case Record Type                 | IntSales Request             | Object Manager > Case > Record Types              |
+| Case Page Layout                 | IntSales Request             | Object Manager > Case > Case Page Layouts         |
 | Case Path                        | IntSales Path                |
-| Case Lightning Page              | IntSales_Case_Page           |
-| Task Record Type                 | IntSales Task                |
-| Contact Page Layout              | Intelligent Sales            |
-| Contact Lightning Page           | Contact_Record_Page_IntSales |
-| Contact Compact Layout           | Intelligent Sales Layout     |
-| Lead Record Type                 | Intelligent Sales            |
-| Lead Page Layout                 | Intelligent Sales            |
-| Lead Lightning Page              | Lead_Record_Page_IntSales    |
-| Lead Compact Layout              | Intelligent Sales Layout     |
-| Account Page Layout              | Account Layout - IntSales    |
-| Account Lightning Page           | Account_Record_Page_IntSales |
-| Account Compact Layout           | Intelligent Sales Layout     |
+| Case Lightning Page              | IntSales_Case_Page           | Object Manager > Case > Lightning Record Pages    |
+| Task Record Type                 | IntSales Task                | Object Manager > Task > Record Types              |
+| Contact Page Layout              | Intelligent Sales            | Object Manager > Contact > Page Layouts           |
+| Contact Lightning Page           | Contact_Record_Page_IntSales | Object Manager > Contact > Lightning Record Pages |
+| Contact Compact Layout           | Intelligent Sales Layout     | Object Manager > Contact > Compact Layouts        |
+| Lead Record Type                 | Intelligent Sales            | Object Manager > Lead > Record Types              |
+| Lead Page Layout                 | Intelligent Sales            | Object Manager > Lead > Page Layouts              |
+| Lead Lightning Page              | Lead_Record_Page_IntSales    | Object Manager > Lead > Lightning Record Pages    |
+| Lead Compact Layout              | Intelligent Sales Layout     | Object Manager > Lead > Compact Layouts           |
+| Account Page Layout              | Account Layout - IntSales    | Object Manager > Account > Page Layouts           |
+| Account Lightning Page           | Account_Record_Page_IntSales | Object Manager > Account > Lightning Record Pages |
+| Account Compact Layout           | Intelligent Sales Layout     | Object Manager > Account > Compact Layouts        |
 
 ## Unmanaged Package Component Inventory
 
@@ -242,6 +215,8 @@ Add Accelerator Objective
 | Create                     | Intelligent Sales Dashboards                                |                   | Dashboard Folder                 | This is a brand new component. |
 | Create                     | New_Task_IntSales                                           | Global            | Action                           | This is a brand new component. |
 | Create                     | Task.UpdateStatusIntSales                                   | Task              | Action                           | This is a brand new component. |
+| Create                     | Meeting Reminder                                            |                   | Email Template                   | This is a brand new component. |
+| Create                     | Meeting Reminder                                            |                   | Email Alert                      | This is a brand new component. |
 |                            |                                                             |                   |                                  |                                |
 | Apps:                      |                                                             |                   |                                  |                                |
 | **Action**                 | **Component Name**                                          | **Parent Object** | **Component Type**               | **Installation Notes**         |
@@ -249,7 +224,7 @@ Add Accelerator Objective
 |                            |                                                             |                   |                                  |                                |
 | Flows:                     |                                                             |                   |                                  |                                |
 | **Action**                 | **Component Name**                                          | **Parent Object** | **Component Type**               | **Installation Notes**         |
-| Create                     | Reminder to Enroll in Provider Portal                       |                   | Flow Version                     | This is a brand new component. |
+| Create                     | Intelligent Sales Meeting Reminder                          |                   | Flow Version                     | This is a brand new component. |
 |                            |                                                             |                   |                                  |                                |
 | Fields:                    |                                                             |                   |                                  |                                |
 | **Action**                 | **Component Name**                                          | **Parent Object** | **Component Type**               | **Installation Notes**         |
