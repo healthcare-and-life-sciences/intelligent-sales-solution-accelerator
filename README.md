@@ -167,6 +167,11 @@ Add Accelerator Objective
 | Account Lightning Page           | Account_Record_Page_IntSales | Object Manager > Account > Lightning Record Pages |
 | Account Compact Layout           | Intelligent Sales Layout     | Object Manager > Account > Compact Layouts        |
 
+**Share Dashboard and Report Folders**
+
+1. In the App Launcher, go to Dashboards and share the folder "Intelligent Sales Dashboards" with a Public Group that includes users with your created Profile.
+2. In the App Launcher, go to Reports and share the folder "Intelligent Sales Reports" with the same Public Group in step 1.
+
 ## Unmanaged Package Component Inventory
 
 | Resources:                 |                                                             |                   |                                  |                                |
