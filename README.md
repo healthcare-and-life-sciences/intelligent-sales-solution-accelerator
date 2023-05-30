@@ -169,8 +169,8 @@ Add Accelerator Objective
 
 **Share Dashboard and Report Folders**
 
-1. In the App Launcher, go to Dashboards and share the folder "Intelligent Sales Dashboards" with a Public Group that includes users with your created Profile.
-2. In the App Launcher, go to Reports and share the folder "Intelligent Sales Reports" with the same Public Group in step 1.
+1. In the App Launcher, go to Dashboards and share the folder "Intelligent Sales Dashboards" with a Role or a Public Group that includes users with your created Profile.
+2. In the App Launcher, go to Reports and share the folder "Intelligent Sales Reports" with the same Role or Group in step 1.
 
 ## Unmanaged Package Component Inventory
 
