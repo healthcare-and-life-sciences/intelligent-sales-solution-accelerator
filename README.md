@@ -117,16 +117,6 @@ Add Accelerator Objective
 4. At the bottom of the Activity Settings, click “Suggest” to auto-assign the custom fields.
 5. In the Field Set dropdown in Activity Settings, Select the Field Set “Salesforce Maps Check Out”.
 
-![](/images/prm1.png)
-
-**Configure Recommendation Record -** This Recommendation will show as a Next Best Action to your liaisons as they review contact records in Salesforce. If the custom field “Enrolled in Provider Portal?” on the Contact Record is Unchecked, then this recommendation will show.
-
-1. Download the recommendation_1.csv file in the GitHub repository here: https://github.com/healthcare-and-life-sciences/intelligent-sales-solution-accelerator
-2. Use DataLoader to import the CSV file into the Recommendation object in your Salesforce org. When importing, you may leave the following fields unmapped:
-     1. ID
-     2. ISACTIONACTIVE
-     3. ISDELETED
-
 **Meeting Reminder Flow and Email Template**
 
 1. This will enable the system to automatically send prospects or contacts an email reminder of an upcoming meeting 1 day before the meeting date. This helps decrease the no-show rate of prospects or contacts of liaison meetings.
