@@ -89,7 +89,7 @@ Add Accelerator Objective
 
 #### These steps must be completed to install the unmanaged package of pre-built components for PRM
 
-1. Navigate to the following website and complete the Download Now workflow: [_https://hlsaccelerators.developer.salesforce.com/s/bundle/a9E5f000000PKvwEAG/solution-accelerator-for-provider-relationship-management_](https://hlsaccelerators.developer.salesforce.com/s/bundle/a9E5f000000PKvwEAG/solution-accelerator-for-provider-relationship-management)
+1. Navigate to the following website and complete the Download Now workflow: [_https://login.salesforce.com/packaging/installPackage.apexp?p0=04tDo0000000zdh_](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tDo0000000zdh)
      1. You will be prompted to acknowledge the Terms of Service, after which please enter your email address to receive a one-time confirmation code.
      2. Enter the confirmation code in the next step. After entering the code, you will have a chance to open these same instructions in your browser.
      3. On the final step, you will be presented with “Install In My Org” which will bring you to the Salesforce login screen. Enter your credentials for the org in which you wish to install the accelerator.
@@ -126,8 +126,8 @@ Add Accelerator Objective
 
 **Add “Confirm Meeting” Quick Action to your users’ Publisher Layout**
 
-1. The package contains a Quick Action labeled “Confirm Meeting” which enables your Physician Liaison user to send a templated email to a contact/lead to confirm an upcoming meeting in one click.
-2. To enable this Quick Action, add the Quick Action to the active Publisher Layout assigned to the Physician Liaison Profile, or your Global Publisher Layout.
+1. The package contains a Quick Action labeled “Confirm Meeting” which enables your user to send a templated email to a contact/lead to confirm an upcoming meeting in one click.
+2. To enable this Quick Action, add the Quick Action to the active Publisher Layout assigned to the relevant profile, or your Global Publisher Layout.
 3. Refer to this Help Article for more information on how to edit a Publisher Layout: [_https://help.salesforce.com/s/articleView?id=sf.working_with_global_publisher_layouts.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.working_with_global_publisher_layouts.htm&type=5)
 
 **Create a Profile**
