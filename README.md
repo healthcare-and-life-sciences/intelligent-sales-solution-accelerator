@@ -26,38 +26,11 @@ Add Accelerator Objective
 
 ### Primary Industry:
 
--    Provider
+-    MedTech
 
 ### Primary User Persona:
 
 -    Physician Liaison
-
-### User Workflow:
-
--    Add
--    Add
-
----
-
-## Package Includes:
-
-### **OmniScript (#)**
-
--    Add
--    Add
--    Add
-
-### **DataRaptor (#)**
-
--    Add
--    Add
--    Add
-
-### **Custom Components (#)**
-
--    Add
--    Add
--    Add
 
 ---
 
