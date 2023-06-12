@@ -47,7 +47,7 @@ Add Accelerator Objective
 2. **Enable “Send Email” and Allow Activities**
      1. Setup > Search for “Deliverability”
      2. Select “Deliverability”
-     3. Set Send Email Access to “All Email”
+     3. Set Access to Send Email access level to “All Email”
      4. Refer to this Help Article for more information: [_https://help.salesforce.com/s/articleView?id=sf.data_sandbox_email_deliverability.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.data_sandbox_email_deliverability.htm&type=5)
 3. **Set the Organization-Wide Email Address**
      1. Setup > Email > Organization-Wide Addresses
@@ -57,6 +57,10 @@ Add Accelerator Objective
      1. Setup a Default User if one is not already specified in your settings.
      2. Turn on Email-To-Case.
      3. Refer to this Help Article for step-by-step instructions: [_https://help.salesforce.com/s/articleView?id=sf.customizesupport_enabling_email_to_case.htm&language=en_US_](https://help.salesforce.com/s/articleView?id=sf.customizesupport_enabling_email_to_case.htm&language=en_US&r=https%3A%2F%2Fwww.google.com%2F&type=5#:~:text=From%20Setup%2C%20enter%20Email%2Dto,%2DCase%2C%20and%20click%20Save)
+5. **OPTIONAL: Track Specialties in Account and Contact objects**
+     1. If your organization isn't already tracking these in Salesforce
+          1. Add **Specialties** to the Account object to track the specialties that the hospital/health system offers.
+          2. Add **Product Specialties** to the Contact object to list the products the provider is trained on and uses.
 
 ### Installion Steps:
 
