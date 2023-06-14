@@ -93,6 +93,7 @@ Add Accelerator Objective
 3. The package contains predefined custom fields for the Check-In Activity Fields. Please follow the steps in this Help Article: [_https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_check_in_activity_fields_select.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_check_in_activity_fields_select.htm&type=5)
 4. At the bottom of the Activity Settings, click “Suggest” to auto-assign the custom fields.
 5. In the Field Set dropdown in Activity Settings, Select the Field Set “Salesforce Maps Check Out”.
+     1. **NOTE:** If you have errors when checking in and out from a location on the map, make sure that the Task object has a valid assigned record type for the profile in use.
 
 **Meeting Reminder Flow and Email Template**
 
@@ -117,12 +118,12 @@ Add Accelerator Objective
 | **Component Type**               | **Component Name**           | **Location in Setup**                             |
 | -------------------------------- | ---------------------------- | ------------------------------------------------- |
 | Lightning App                    | Intelligent Sales            | Lightning App Builder                             |
-| Default Home Page - IntSales App | Intelligent_Sales_Home_Page  |
+| Default Home Page - IntSales App | Intelligent_Sales_Home_Page  |                                                   |
 | Case Record Type                 | IntSales Request             | Object Manager > Case > Record Types              |
 | Case Page Layout                 | IntSales Request             | Object Manager > Case > Case Page Layouts         |
-| Case Path                        | IntSales Path                |
+| Case Path                        | IntSales Path                |                                                   |
 | Case Lightning Page              | IntSales_Case_Page           | Object Manager > Case > Lightning Record Pages    |
-| Task Record Type                 | IntSales Task                | Object Manager > Task > Record Types              |
+| Task Record Type                 | Intelligent Sales            | Object Manager > Task > Record Types              |
 | Contact Page Layout              | Intelligent Sales            | Object Manager > Contact > Page Layouts           |
 | Contact Lightning Page           | Contact_Record_Page_IntSales | Object Manager > Contact > Lightning Record Pages |
 | Contact Compact Layout           | Intelligent Sales Layout     | Object Manager > Contact > Compact Layouts        |
