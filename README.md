@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Accelerator for Intelligent Sales Solutions delivers a pre-configured app to enable your liaisons to maintain and expand their network of referring physicians. The pre-built app is available for download into your Salesforce org free of charge using the controls to the right.
+The Accelerator for Intelligent Sales Solutions delivers a pre-configured app to enable your sales techs to maintain and expand their network. The pre-built app is available for download into your Salesforce org free of charge.
 
 ---
 
@@ -13,9 +13,6 @@ The Accelerator for Intelligent Sales Solutions delivers a pre-configured app to
 Add Accelerator Objective
 
 ## Business Value and Benefits
-
--    Add
--    Add
 
 -    Add
 -    Add
@@ -30,7 +27,7 @@ Add Accelerator Objective
 
 ### Primary User Persona:
 
--    Physician Liaison
+-    Sales Techs
 
 ---
 
