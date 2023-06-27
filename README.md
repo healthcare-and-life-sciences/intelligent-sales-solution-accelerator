@@ -10,12 +10,12 @@ The Accelerator for Intelligent Sales Solutions delivers a pre-configured app to
 
 ## Business Objective
 
-Add Accelerator Objective
+The Accelerator delivers a pre-configured app to enable your sales reps to maintain and expand their network of B2B stakeholders.
 
 ## Business Value and Benefits
 
--    Add
--    Add
+-    Drive sales rep productivity
+-    Reduce the cost of customer acquisition and generating opportunities,
 
 ---
 
@@ -63,7 +63,7 @@ Add Accelerator Objective
 
 #### These steps must be completed to install the unmanaged package of pre-built components for PRM
 
-1. Navigate to the following website and complete the Download Now workflow: [_https://login.salesforce.com/packaging/installPackage.apexp?p0=04tDo0000000zdm_](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tDo0000000zdm)
+1. Navigate to the following website and complete the Download Now workflow: [_https://login.salesforce.com/packaging/installPackage.apexp?p0=04tDo0000000zdr_](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tDo0000000zdr)
      1. You will be prompted to acknowledge the Terms of Service, after which please enter your email address to receive a one-time confirmation code.
      2. Enter the confirmation code in the next step. After entering the code, you will have a chance to open these same instructions in your browser.
      3. On the final step, you will be presented with “Install In My Org” which will bring you to the Salesforce login screen. Enter your credentials for the org in which you wish to install the accelerator.
