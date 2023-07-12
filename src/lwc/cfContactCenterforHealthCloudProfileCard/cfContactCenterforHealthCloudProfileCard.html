@@ -1,0 +1,211 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <omnistudio-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </omnistudio-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <omnistudio-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></omnistudio-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <omnistudio-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="slds-col  slds-m-horizontal_xx-small  slds-size_1-of-12  " data-rindex={rindex} style="      
+         height: 60.23310852050781px;
+width: 57.27272033691406px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+" ><omnistudio-flex-icon data-style-id="state0element0_child"   card={card}  record={record}  icon-type="Custom"  icon-name="action:user"  size="large"  extraclass=""  variant="default"  imgsrc="/projRes/ui-industries-healthcare-components/userProfile.svg"  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state0element1" class="slds-col   slds-size_8-of-12  " data-rindex={rindex} style="      
+        color:#181818; " ><omnistudio-output-field data-style-id="state0element1_child"   card={card}  record={record}  merge-field="%3Cdiv%20class=%22slds-text-heading_medium%22%3E%3Cspan%20style=%22font-size:%2018pt;%22%3E%7BName%7D%3C/span%3E%3C/div%3E%0A%3Ch5%20class=%22slds-text-heading_small%22%3E%3Cspan%20style=%22font-size:%2010pt;%22%3E{Label.COC.PT}%3C/span%3E%3C/h5%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element2" class="slds-col   slds-p-around_x-small slds-size_12-of-12  " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element2_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element2block_element0" class="slds-col  slds-text-align_left slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_xx-small slds-m-horizontal_xx-small slds-m-bottom_xxx-small  slds-large-size_11-of-12  slds-medium-size_10-of-12  slds-small-size_4-of-12  slds-size_4-of-12  " data-rindex={rindex} style="     border-top: #C9C9C9 1px solid;border-right: #C9C9C9 1px solid;border-bottom: #C9C9C9 1px solid;border-left: #C9C9C9 1px solid; 
+    border-radius:0.30rem;    color:#181818; " ><omnistudio-output-field data-style-id="state0element2block_element0_child"   card={card}  record={record}  merge-field="%3Cdiv%3E{Label.COC.ECN}:%20%7BAssistantName%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element2block_element1" class="slds-col  slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_xx-small slds-m-horizontal_xx-small slds-m-top_xx-small  slds-large-size_11-of-12  slds-medium-size_10-of-12  slds-small-size_4-of-12  slds-size_4-of-12  " data-rindex={rindex} style="     border-top: #C9C9C9 1px solid;border-right: #C9C9C9 1px solid;border-bottom: #C9C9C9 1px solid;border-left: #C9C9C9 1px solid; 
+    border-radius:0.30rem;    color:#181818; " ><omnistudio-output-field data-style-id="state0element2block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E{Label.COC.ECTN}:%20%7BAssistentPhone%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element3" class="slds-col   slds-p-around_x-small slds-size_12-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element3_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element3block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><omnistudio-flex-icon data-style-id="state0element3block_element0_child"   card={card}  record={record}  icon-type="Salesforce SVG"  icon-name="utility:call"  size="x-small"  extraclass="slds-icon_container slds-icon__svg--default "  variant="default"  imgsrc=""  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state0element3block_element1" class="slds-col   slds-size_8-of-12  " data-rindex={rindex} style="      
+        color:#181818; " ><omnistudio-output-field data-style-id="state0element3block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7Bphone%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element4" class="slds-col   slds-p-around_x-small slds-size_12-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element4_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element4block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><omnistudio-flex-icon data-style-id="state0element4block_element0_child"   card={card}  record={record}  icon-type="Salesforce SVG"  icon-name="utility:email"  size="x-small"  extraclass="slds-icon_container slds-icon__svg--default "  variant="default"  imgsrc=""  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state0element4block_element1" class="slds-col   slds-size_10-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element4block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7BEmail%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element5" class="slds-col   slds-p-around_x-small slds-size_12-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element5_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element5block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><omnistudio-flex-icon data-style-id="state0element5block_element0_child"   card={card}  record={record}  icon-type="Custom"  icon-name="utility:home"  size="x-small"  extraclass="slds-icon_container slds-icon__svg--default "  variant="default"  imgsrc="/projRes/ui-industries-healthcare-components/home.svg"  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state0element5block_element1" class="slds-col   slds-size_11-of-12  " data-rindex={rindex} style="      
+        color:#181818; " ><omnistudio-output-field data-style-id="state0element5block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7BCompleteAddress%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div>
+        </div>
+      </omnistudio-flex-card-state><omnistudio-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="1" data-rindex={rindex} class="cf-vlocity-state-1 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state1element0" class="slds-col  slds-m-horizontal_xx-small  slds-size_1-of-12  " data-rindex={rindex} style="      
+         height: 60.23310852050781px;
+width: 57.27272033691406px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+" ><omnistudio-flex-icon data-style-id="state1element0_child"   card={card}  record={record}  icon-type="Custom"  icon-name="action:user"  size="large"  extraclass=""  variant="default"  imgsrc="/projRes/ui-industries-healthcare-components/userProfile.svg"  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state1element1" class="slds-col   slds-size_8-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state1element1_child"   card={card}  record={record}  merge-field="%3Cdiv%20class=%22slds-text-heading_medium%22%3E%3Cspan%20style=%22font-size:%2018pt;%22%3E%7BName%7D%3C/span%3E%3C/div%3E%0A%3Ch5%20class=%22slds-text-heading_small%22%3E%3Cspan%20style=%22font-size:%2010pt;%22%3E{Label.COC.AC}%3C/span%3E%3C/h5%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state1element2" class="slds-col   slds-p-around_x-small slds-size_12-of-12  " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state1element2_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state1element2block_element0" class="slds-col  slds-text-align_left slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_xx-small slds-m-horizontal_xx-small slds-m-bottom_xxx-small  slds-large-size_10-of-12 slds-medium-size_10-of-12 slds-small-size_4-of-12 slds-size_4-of-12  " data-rindex={rindex} style="     border-top: #C9C9C9 1px solid;border-right: #C9C9C9 1px solid;border-bottom: #C9C9C9 1px solid;border-left: #C9C9C9 1px solid; 
+    border-radius:0.30rem;    color:#181818; " ><omnistudio-output-field data-style-id="state1element2block_element0_child"   card={card}  record={record}  merge-field="%3Cdiv%3E{Label.COC.AN}:%20%7BBusinessAccountAssistentName%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state1element2block_element1" class="slds-col  slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_xx-small slds-m-horizontal_xx-small slds-m-top_xx-small  slds-large-size_10-of-12 slds-medium-size_10-of-12 slds-small-size_4-of-12 slds-size_4-of-12  " data-rindex={rindex} style="     border-top: #C9C9C9 1px solid;border-right: #C9C9C9 1px solid;border-bottom: #C9C9C9 1px solid;border-left: #C9C9C9 1px solid; 
+    border-radius:0.30rem;    color:#181818; " ><omnistudio-output-field data-style-id="state1element2block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E{Label.COC.AMN}:%20%7BBusinessAccountAssistentPhone%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state1element3" class="slds-col   slds-p-around_x-small  slds-size_12-of-12  " data-rindex={rindex} style="      
+        color:#181818; " >
+    <omnistudio-block data-style-id="state1element3_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state1element3block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><omnistudio-flex-icon data-style-id="state1element3block_element0_child"   card={card}  record={record}  icon-type="Salesforce SVG"  icon-name="utility:call"  size="x-small"  extraclass="slds-icon_container slds-icon__svg--default "  variant="default"  imgsrc=""  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state1element3block_element1" class="slds-col   slds-size_8-of-12  " data-rindex={rindex} style="      
+        color:#181818; " ><omnistudio-output-field data-style-id="state1element3block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7Bphone%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state1element4" class="slds-col   slds-p-around_x-small slds-size_12-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state1element4_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state1element4block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><omnistudio-flex-icon data-style-id="state1element4block_element0_child"   card={card}  record={record}  icon-type="Salesforce SVG"  icon-name="utility:email"  size="x-small"  extraclass="slds-icon_container slds-icon__svg--default "  variant="default"  imgsrc=""  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state1element4block_element1" class="slds-col   slds-size_10-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state1element4block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7BBusinessAccountAssistentEmail%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state1element5" class="slds-col   slds-p-around_x-small slds-size_12-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state1element5_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state1element5block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><omnistudio-flex-icon data-style-id="state1element5block_element0_child"   card={card}  record={record}  icon-type="Custom"  icon-name="utility:home"  size="x-small"  extraclass="slds-icon_container slds-icon__svg--default "  variant="default"  imgsrc="/projRes/ui-industries-healthcare-components/home.svg"  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state1element5block_element1" class="slds-col   slds-size_11-of-12  " data-rindex={rindex} style="      
+        color:#181818; " ><omnistudio-output-field data-style-id="state1element5block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7BCompleteAddress%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div>
+        </div>
+      </omnistudio-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <omnistudio-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="slds-col  slds-m-horizontal_xx-small  slds-size_1-of-12  " data-rindex={rindex} style="      
+         height: 60.23310852050781px;
+width: 57.27272033691406px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+" ><omnistudio-flex-icon data-style-id="state0element0_child"   card={card}  record={record}  icon-type="Custom"  icon-name="action:user"  size="large"  extraclass=""  variant="default"  imgsrc="/projRes/ui-industries-healthcare-components/userProfile.svg"  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state0element1" class="slds-col   slds-size_8-of-12  " data-rindex={rindex} style="      
+        color:#181818; " ><omnistudio-output-field data-style-id="state0element1_child"   card={card}  record={record}  merge-field="%3Cdiv%20class=%22slds-text-heading_medium%22%3E%3Cspan%20style=%22font-size:%2018pt;%22%3E%7BName%7D%3C/span%3E%3C/div%3E%0A%3Ch5%20class=%22slds-text-heading_small%22%3E%3Cspan%20style=%22font-size:%2010pt;%22%3E{Label.COC.PT}%3C/span%3E%3C/h5%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element2" class="slds-col   slds-p-around_x-small slds-size_12-of-12  " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element2_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element2block_element0" class="slds-col  slds-text-align_left slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_xx-small slds-m-horizontal_xx-small slds-m-bottom_xxx-small  slds-large-size_11-of-12  slds-medium-size_10-of-12  slds-small-size_4-of-12  slds-size_4-of-12  " data-rindex={rindex} style="     border-top: #C9C9C9 1px solid;border-right: #C9C9C9 1px solid;border-bottom: #C9C9C9 1px solid;border-left: #C9C9C9 1px solid; 
+    border-radius:0.30rem;    color:#181818; " ><omnistudio-output-field data-style-id="state0element2block_element0_child"   card={card}  record={record}  merge-field="%3Cdiv%3E{Label.COC.ECN}:%20%7BAssistantName%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element2block_element1" class="slds-col  slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_xx-small slds-m-horizontal_xx-small slds-m-top_xx-small  slds-large-size_11-of-12  slds-medium-size_10-of-12  slds-small-size_4-of-12  slds-size_4-of-12  " data-rindex={rindex} style="     border-top: #C9C9C9 1px solid;border-right: #C9C9C9 1px solid;border-bottom: #C9C9C9 1px solid;border-left: #C9C9C9 1px solid; 
+    border-radius:0.30rem;    color:#181818; " ><omnistudio-output-field data-style-id="state0element2block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E{Label.COC.ECTN}:%20%7BAssistentPhone%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element3" class="slds-col   slds-p-around_x-small slds-size_12-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element3_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element3block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><omnistudio-flex-icon data-style-id="state0element3block_element0_child"   card={card}  record={record}  icon-type="Salesforce SVG"  icon-name="utility:call"  size="x-small"  extraclass="slds-icon_container slds-icon__svg--default "  variant="default"  imgsrc=""  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state0element3block_element1" class="slds-col   slds-size_8-of-12  " data-rindex={rindex} style="      
+        color:#181818; " ><omnistudio-output-field data-style-id="state0element3block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7Bphone%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element4" class="slds-col   slds-p-around_x-small slds-size_12-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element4_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element4block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><omnistudio-flex-icon data-style-id="state0element4block_element0_child"   card={card}  record={record}  icon-type="Salesforce SVG"  icon-name="utility:email"  size="x-small"  extraclass="slds-icon_container slds-icon__svg--default "  variant="default"  imgsrc=""  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state0element4block_element1" class="slds-col   slds-size_10-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element4block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7BEmail%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element5" class="slds-col   slds-p-around_x-small slds-size_12-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element5_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element5block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><omnistudio-flex-icon data-style-id="state0element5block_element0_child"   card={card}  record={record}  icon-type="Custom"  icon-name="utility:home"  size="x-small"  extraclass="slds-icon_container slds-icon__svg--default "  variant="default"  imgsrc="/projRes/ui-industries-healthcare-components/home.svg"  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state0element5block_element1" class="slds-col   slds-size_11-of-12  " data-rindex={rindex} style="      
+        color:#181818; " ><omnistudio-output-field data-style-id="state0element5block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7BCompleteAddress%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div>
+        </div>
+      </omnistudio-flex-card-state><omnistudio-flex-card-state  record={record} data-statue="false"  data-index="1" data-rindex={rindex} class="cf-vlocity-state-1 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state1element0" class="slds-col  slds-m-horizontal_xx-small  slds-size_1-of-12  " data-rindex={rindex} style="      
+         height: 60.23310852050781px;
+width: 57.27272033691406px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+" ><omnistudio-flex-icon data-style-id="state1element0_child"   card={card}  record={record}  icon-type="Custom"  icon-name="action:user"  size="large"  extraclass=""  variant="default"  imgsrc="/projRes/ui-industries-healthcare-components/userProfile.svg"  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state1element1" class="slds-col   slds-size_8-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state1element1_child"   card={card}  record={record}  merge-field="%3Cdiv%20class=%22slds-text-heading_medium%22%3E%3Cspan%20style=%22font-size:%2018pt;%22%3E%7BName%7D%3C/span%3E%3C/div%3E%0A%3Ch5%20class=%22slds-text-heading_small%22%3E%3Cspan%20style=%22font-size:%2010pt;%22%3E{Label.COC.AC}%3C/span%3E%3C/h5%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state1element2" class="slds-col   slds-p-around_x-small slds-size_12-of-12  " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state1element2_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state1element2block_element0" class="slds-col  slds-text-align_left slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_xx-small slds-m-horizontal_xx-small slds-m-bottom_xxx-small  slds-large-size_10-of-12 slds-medium-size_10-of-12 slds-small-size_4-of-12 slds-size_4-of-12  " data-rindex={rindex} style="     border-top: #C9C9C9 1px solid;border-right: #C9C9C9 1px solid;border-bottom: #C9C9C9 1px solid;border-left: #C9C9C9 1px solid; 
+    border-radius:0.30rem;    color:#181818; " ><omnistudio-output-field data-style-id="state1element2block_element0_child"   card={card}  record={record}  merge-field="%3Cdiv%3E{Label.COC.AN}:%20%7BBusinessAccountAssistentName%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state1element2block_element1" class="slds-col  slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_xx-small slds-m-horizontal_xx-small slds-m-top_xx-small  slds-large-size_10-of-12 slds-medium-size_10-of-12 slds-small-size_4-of-12 slds-size_4-of-12  " data-rindex={rindex} style="     border-top: #C9C9C9 1px solid;border-right: #C9C9C9 1px solid;border-bottom: #C9C9C9 1px solid;border-left: #C9C9C9 1px solid; 
+    border-radius:0.30rem;    color:#181818; " ><omnistudio-output-field data-style-id="state1element2block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E{Label.COC.AMN}:%20%7BBusinessAccountAssistentPhone%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state1element3" class="slds-col   slds-p-around_x-small  slds-size_12-of-12  " data-rindex={rindex} style="      
+        color:#181818; " >
+    <omnistudio-block data-style-id="state1element3_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state1element3block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><omnistudio-flex-icon data-style-id="state1element3block_element0_child"   card={card}  record={record}  icon-type="Salesforce SVG"  icon-name="utility:call"  size="x-small"  extraclass="slds-icon_container slds-icon__svg--default "  variant="default"  imgsrc=""  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state1element3block_element1" class="slds-col   slds-size_8-of-12  " data-rindex={rindex} style="      
+        color:#181818; " ><omnistudio-output-field data-style-id="state1element3block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7Bphone%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state1element4" class="slds-col   slds-p-around_x-small slds-size_12-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state1element4_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state1element4block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><omnistudio-flex-icon data-style-id="state1element4block_element0_child"   card={card}  record={record}  icon-type="Salesforce SVG"  icon-name="utility:email"  size="x-small"  extraclass="slds-icon_container slds-icon__svg--default "  variant="default"  imgsrc=""  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state1element4block_element1" class="slds-col   slds-size_10-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state1element4block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7BBusinessAccountAssistentEmail%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state1element5" class="slds-col   slds-p-around_x-small slds-size_12-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state1element5_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state1element5block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><omnistudio-flex-icon data-style-id="state1element5block_element0_child"   card={card}  record={record}  icon-type="Custom"  icon-name="utility:home"  size="x-small"  extraclass="slds-icon_container slds-icon__svg--default "  variant="default"  imgsrc="/projRes/ui-industries-healthcare-components/home.svg"  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state1element5block_element1" class="slds-col   slds-size_11-of-12  " data-rindex={rindex} style="      
+        color:#181818; " ><omnistudio-output-field data-style-id="state1element5block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7BCompleteAddress%7D%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div>
+        </div>
+      </omnistudio-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <omnistudio-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </omnistudio-action>
+  
+            <omnistudio-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </omnistudio-action>
+            </div>
+          </template>
