@@ -15,7 +15,7 @@ The Accelerator delivers a pre-configured app to enable your sales reps to maint
 ## Business Value and Benefits
 
 -    Drive sales rep productivity
--    Reduce the cost of customer acquisition and generating opportunities,
+-    Reduce the cost of customer acquisition and generating opportunities
 
 ---
 
@@ -224,7 +224,7 @@ The Accelerator delivers a pre-configured app to enable your sales reps to maint
 
 ## Assumptions
 
-1. A customer has licenses for Industry Cloud and Salesforce Maps. These solutions have all been installed and are functional.
+1. A customer has licenses for Health Cloud and Salesforce Maps. These solutions have all been installed and are functional.
 2. A customer is assuming Salesforce Lightning Experience — not Classic.
 3. The Accelerator uses the Lightning Design System standards and look. Customers may want to apply their own branding which can be achieved.
 
